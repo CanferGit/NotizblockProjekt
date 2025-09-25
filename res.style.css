@@ -1,0 +1,221 @@
+@media(max-width: 1000px) {
+
+
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(136, 78, 3);
+        height: 200px;
+    }
+
+    .headline h1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .headline h1 span {
+        display: block;
+        text-align: center;
+        font-size: 45px;
+    }
+
+    .trash {
+        width: 47px;
+        height: 57px;
+        object-fit: cover;
+        margin-left: 22px;
+        margin-bottom: 95px;
+        background-size: cover;
+    }
+
+    .addNote {
+        width: 49px;
+        height: 49px;
+        object-fit: cover;
+        margin-right: 22px;
+        margin-bottom: 95px;
+        background-size: cover;
+    }
+
+
+    .secondcontainer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        min-height: 82vh;
+        max-height: 100%;
+        max-width: 1000px;
+        min-width: 100%;
+        background-color: rgb(216, 203, 203);
+    }
+
+
+    .creatContain {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
+        margin-top: 40px;
+        padding-bottom: 45px;
+        min-width: 290px;
+        max-width: 290px;
+    }
+
+    input {
+        height: 30px;
+        min-width: 295px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+    }
+
+    .secondNoteContainer {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        font-size: 24px;
+        min-height: 200px;
+        width: 290px;
+        max-width: 290px;
+        padding: 10px 0 0 10px;
+        background-color: rgb(197, 129, 40);
+        overflow: auto;
+        box-shadow: 20px 10px 10px rgba(0, 0, 0, 0.5);
+    }
+
+
+
+
+}
+
+
+@media(max-width: 370px) {
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(136, 78, 3);
+        height: 200px;
+        min-width: 320px;
+        max-width: 370px;
+    }
+
+    .headline h1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .headline h1 span {
+        display: block;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .trash {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        margin-left: 14px;
+        margin-bottom: 95px;
+        background-size: cover;
+    }
+
+    .addNote {
+        width: 42px;
+        height: 42px;
+        object-fit: cover;
+        margin-right: 28px;
+        margin-bottom: 95px;
+        background-size: cover;
+    }
+
+
+    .secondcontainer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        min-height: 82vh;
+        max-height: 100%;
+        min-width: 320px;
+        max-width: 370px;
+        background-color: rgb(216, 203, 203);
+    }
+
+
+    .creatContain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 55px;
+        padding-bottom: 45px;
+        padding-right: 15px;
+        min-width: 320px;
+        max-width: 370px;
+    }
+
+    input {
+        height: 30px;
+        min-width: 295px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+    }
+
+    .secondNoteContainer {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        font-size: 20px;
+        min-height: 200px;
+        min-width: 225px;
+        max-width: 225px;
+        padding: 10px 0 0 10px;
+        background-color: rgb(197, 129, 40);
+        overflow: auto;
+        box-shadow: 20px 10px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    input {
+        height: 30px;
+        min-width: 230px;
+        max-width: 230px;
+        border: 1px solid #ccc;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+    }
+
+    .deleteContainer {
+        display: flex;
+        padding-left: 225px;
+        margin-top: 7px;
+        height: 23px;
+        width: 23px;
+
+
+    }
+
+    .buttonposition {
+        display: flex;
+        justify-content: flex-end;
+        width: 233px;
+        height: 35px;
+    }
+
+}

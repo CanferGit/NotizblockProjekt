@@ -1,0 +1,191 @@
+
+
+@keyframes suckInAnimation {
+    0% { 
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-100vw, -100vh) scale(0);
+        opacity: 0;
+    }
+}
+
+body {
+    margin: 0;
+
+}
+
+.suckIn {
+    animation: suckInAnimation 1s forwards;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(136, 78, 3);
+    height: 170px;
+    font-size: 30px;
+
+}
+
+.trash {
+
+    background-image: url(./img/trash.png);
+    width: 54px;
+    height: 54px;
+    object-fit: cover;
+    margin-left: 100px;
+    transition: transform 0.3s ease;
+}
+
+.trash:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.addNote {
+    background-image: url(./img/plus.png);
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 100px;
+    transition: transform 0.3s ease;
+}
+
+.addNote:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.secondcontainer {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    min-height: 100vh;
+    max-height: 100%;
+    max-width: 100%;
+    background-color: rgb(216, 203, 203);
+}
+
+
+.newnote {
+    display: flex;
+    background-image: url(./img/notiz.png);
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    margin: 50px;
+}
+
+
+.creatContain {
+    display: flex;
+    flex-direction: column;
+    min-width: 290px;
+    max-width: 290px;
+    min-height: 275px;
+    max-height: 100%;
+    margin-left: 150px;
+    margin-top: 80px;
+}
+
+
+.deleteContainer {
+    display: flex;
+    padding-left: 285px;
+    height: 30px;
+    width: 30px;
+
+
+}
+
+.deleteImg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: transform 0.3s ease;
+}
+
+.deleteImg:hover {
+    filter: none;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.secondNoteContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 24px;
+    min-height: 200px;
+    width: 290px;
+    max-width: 290px;
+    padding: 10px 0 0 10px;
+    background-color: rgb(197, 129, 40);
+    overflow: auto;
+    box-shadow: 20px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.secondNoteContainer .noteContent {
+    padding: 20px;
+}
+
+input {
+    height: 30px;
+    min-width: 295px;
+    border: 1px solid #ccc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+   
+}
+
+
+
+.buttonposition {
+    display: flex;
+    justify-content: flex-end;
+    width: 300px;
+    height: 40px;
+}
+
+
+.buttonSafe {
+    border-radius: 15px;
+    border: none;
+    margin-right: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttonSafe:hover {
+    background-color: rgb(46, 209, 46);
+}
+
+.trashButton {
+    border-radius: 15px;
+    border: none;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.trashButton:hover {
+    background-color: rgb(218, 43, 43);
+}
